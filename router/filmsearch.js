@@ -4,9 +4,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 
-router.get('/popular', (req, res) => {
+router.get('/film', (req, res) => {
 
-    let filmName = req.query.film
+    let filmName = req.query.name
     let title = filmName.replace(/ /g, "-").toLowerCase()
 
     axios.get(`https://letterboxd.com/film/${title}`)
