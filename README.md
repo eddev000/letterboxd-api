@@ -1,3 +1,6 @@
-<h1>
-    https://letterboxdapi.herokuapp.com/popular?film=Cure
-</h1>
+<p>
+    https://letterboxdapi.herokuapp.com/film?name=Cure
+</p>
+<i>
+    Estou fazendo essa porr ainda!
+</i>
