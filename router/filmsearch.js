@@ -25,16 +25,21 @@ router.get('/film', (req, res) => {
             let sinopse = $(this).find('.truncate > p').text()
             let tagline = $(this).find('.tagline').text()
             let poster = $(this).find('section > div > img').attr('src')
+            let year = $(this).find('.number > a').text()
+            let director = $(this).find('p > a > .prettify').text()
 
             info.push({
                 title : title,
                 tagline : tagline,
                 synopses: sinopse,
-                poster : poster
+                poster : poster,
+                year : year,
+                director : director
             })
         })
         res.send({ 'info' : info, 'bgs' : bgs})
     })
+    .catch(err => console.log(err))
     
 })
 
